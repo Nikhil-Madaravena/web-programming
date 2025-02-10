@@ -1,0 +1,42 @@
+<html>
+<body>
+<script>  
+var data=200;//data is a gloabal variable  
+
+
+function a(){  
+document.write(data);  
+}  
+function b(){
+var data1=data+100; //data1 is a local variable 
+document.write(data1);  
+} 
+
+function getInfo(){  
+return "hello CSE-1! How r u?";  
+} 
+ 
+a();//calling JavaScript function
+document.write("<br>");
+b();
+document.write("<br>"); 
+document.write(getInfo());  
+</script>
+
+<script>
+function callGetInfo()
+{
+document.write(getInfo()); 
+}
+
+function getcube(number){  
+alert("The cube of number 3 is "+number*number*number);  
+}  
+</script> 
+<form>  
+<input type="button" value="click1" onclick="getcube(3)"/>  
+<input type="button" value="click2" onclick="callGetInfo()"/>  
+</form> 
+ 
+</body>
+</html>

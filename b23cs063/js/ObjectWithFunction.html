@@ -1,0 +1,27 @@
+<html>
+<body>
+<script>  
+function emp(id,name,salary){  
+this.id=id;  
+this.name=name;  
+this.salary=salary;  
+this.changeSalary=changeSalary;  
+function changeSalary(otherSalary){  
+this.salary=otherSalary;  
+}  
+}  
+e=new emp(103,"Sonoo ",30000);
+f=new emp(104,"Seenu",40000);  
+g=new emp(105,"Venu",30000);
+document.write(e.id+" "+e.name+" "+e.salary);  
+//e.changeSalary(45000);  
+document.write("<br>"+e.id+" "+e.name+" "+e.salary); 
+
+function totalSalary()
+{
+var totsal=e.salary+f.salary+g.salary;
+document.write("TOTAL SALARY IS :"+totsal);
+} 
+</script>  
+</body>
+</html>

@@ -1,0 +1,46 @@
+<html>
+<head><title> Named Function</title>
+<script language="javascript" type="text/javascript"> 
+//Type-1: Named function can be parameterised or non-parameterised
+function oddOrEven(number)
+{
+if(number%2==0)
+{
+return "Number is Even"
+
+}
+else
+{
+return "Number is Odd"
+}
+}
+</script>
+</head>
+<body>
+<script type="text/javascript" >
+var x=24;
+document.write("The given"+oddOrEven(x));
+document.write("<br>");
+
+//Type-2.1: Anonymous Function(non-parameterised) with an example
+let y = function () {  
+    document.write("It is an anonymous function");  
+	document.write("<br>");
+};  
+y();
+
+//Type-2.2: Anonymous Function(parameterised) with an example
+
+var z=function (a,b)
+			{
+				return a*b;
+			}
+document.getElementById("demo").innerHTML=z(4,3);
+
+//Type-3: Immediate Function with an example
+  (function() {  
+    document.write("Hello, I am an Immediate Function");  
+});  
+</script>
+</body>
+</html>
